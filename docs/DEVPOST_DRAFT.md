@@ -1,13 +1,13 @@
 # ScopeProof — Devpost preparation
 
-**Status: local draft; not submitted.** The local installation, tests, real model runs and browser/export checks are complete as recorded below. Account sign-ins, public repository, public video and final Devpost receipt remain pending.
+**Status: prepared; not submitted.** Installation, tests, real model runs, browser/export checks, public source and a reviewed 136-second demo MP4 are complete. Devpost, AWS Builder and YouTube account sign-ins, the required YouTube/Vimeo upload and the final submission receipt remain pending.
 
 ## Submission fields
 
 - **Project name:** ScopeProof
 - **Tagline:** Turn a client brief into a scope you can explain.
 - **Track:** Professional Agents
-- **Public source repository:** PENDING
+- **Public source repository:** https://github.com/terralabz-customer/scopeproof
 - **Public YouTube or Vimeo video:** PENDING — planned captioned montage of screenshots from actual runs, labeled as edited screenshots rather than real-time screen recording.
 - **AWS Builder ID:** PENDING — use the entrant's actual ID in the form, not this public file.
 - **Entrant and authorized representative:** PENDING — confirm individual or organization entry.
@@ -64,10 +64,11 @@ The [resources page](https://agentsforhumans.devpost.com/resources) says the pro
 - [x] Record the model, test results and limitations.
 - [x] Check browser copy, the actual export and narrow-screen layout.
 - [ ] Record the final published source revision.
-- [ ] Review source and assets for rights, license notices and private information.
-- [ ] Publish the authorized public repository with visible MIT license.
-- [ ] Build and review the captioned actual-run screenshot montage and pitch; publish the video.
+- [x] Review source and assets for rights, license notices and private information.
+- [x] Publish the authorized public repository with visible MIT license.
+- [x] Build and review the 136-second captioned actual-run screenshot montage and pitch.
+- [ ] Upload the MP4 to the required public YouTube or Vimeo host.
 - [ ] Replace pending fields; align all claims with the recorded build.
 - [ ] Complete Devpost and verify the final submission receipt before the deadline.
 
-Unchecked items are outstanding work. Devpost, AWS Builder and YouTube sign-ins still need to be completed. No public repository, public video, submission receipt or award is claimed by this document.
+Unchecked items are outstanding work. Devpost, AWS Builder and YouTube sign-ins still need to be completed. No YouTube/Vimeo publication, submission receipt or award is claimed.

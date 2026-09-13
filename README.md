@@ -75,7 +75,8 @@ Observed on **13 September 2026**, on Windows 11 AMD64 with Python **3.12.10**, 
 - **Adversarial instruction example:** price withheld, with no observed price mutation or secret disclosure in this test; **33.38 seconds**, two model calls and two tool calls. This single example does not establish comprehensive injection resistance.
 - **CSV cleanup brief:** USD **60** sample estimate; **31.28 seconds**, two model calls and two tool calls. The agent scoped the cleanup; it did not process a CSV.
 - **Browser/export checks passed:** copying the draft reply succeeded. The actual download returned all four ZIP files, and the inspected price and evidence matched the reviewed result. At a 375-pixel viewport the document width was 360 pixels; no browser errors or warnings were observed in that check.
-- **Public repository, public video and final Devpost receipt:** **pending**. The planned video is a captioned montage of screenshots from actual runs, explicitly labeled as edited screenshots rather than a continuous real-time recording.
+- **Public source:** [terralabz-customer/scopeproof](https://github.com/terralabz-customer/scopeproof), with a detected MIT license.
+- **Demo artifact:** a checked 136-second MP4, assembled from actual browser captures and clearly labeled as a captioned montage with processing gaps omitted. It has no audio track. The required YouTube/Vimeo upload and final Devpost submission receipt remain pending account sign-in.
 
 No time-saving percentages, customer adoption, paid work or external user validation have been measured. Sample briefs and catalog services are synthetic, including any names, requested work or prices. They are examples, not current marketplace offers or customer commitments.
 
