@@ -1,0 +1,37 @@
+# Python environments, package artifacts and caches
+.venv/
+.runtime/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Local credentials and private runtime material
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+exports/
+private/
+*.log
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Model weights and recordings are separate downloads/public video assets
+*.gguf
+*.safetensors
+*.mp4
+*.mov
+*.webm

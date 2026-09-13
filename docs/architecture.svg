@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">ScopeProof local agent architecture</title>
+  <desc id="desc">A browser sends a client brief to FastAPI, which coordinates a Strands agent. The agent uses a loopback Ollama model and catalog tools, selecting source-segment and capability IDs. Deterministic checks reconstruct exact source statements and withhold sample prices for unresolved scope. The app exports a review pack. All six components are local; no AWS deployment is represented.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M1 1L9 5L1 9" fill="none" stroke="#526477" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <style>
+      text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#142638}
+      .heading{font-size:24px;font-weight:700}
+      .body{font-size:18px;fill:#3d5366}
+      .label{font-size:16px;fill:#425b70;font-weight:600}
+      .wire{fill:none;stroke:#526477;stroke-width:2.5;marker-end:url(#arrow)}
+      .box{fill:#fff;stroke:#bfd0df;stroke-width:1.5}
+    </style>
+  </defs>
+  <rect width="1280" height="760" rx="24" fill="#f3f7fb"/>
+  <text x="48" y="60" font-size="36" font-weight="750">ScopeProof</text>
+  <text x="48" y="95" class="body">From a client brief to an evidence-backed scope and review pack</text>
+  <rect x="26" y="126" width="1228" height="564" rx="24" fill="#eaf1f7" stroke="#97aec3" stroke-dasharray="8 7" stroke-width="1.5"/>
+  <text x="49" y="158" class="label">LOCAL COMPUTER · Ollama host restricted to loopback</text>
+
+  <rect x="48" y="190" width="324" height="170" rx="18" class="box"/>
+  <rect x="48" y="190" width="8" height="170" rx="4" fill="#4d77d6"/>
+  <text x="72" y="230" class="heading">Brief &amp; review UI</text>
+  <text x="72" y="267" class="body">Client text or synthetic demo</text>
+  <text x="72" y="297" class="body">Scope, evidence and questions</text>
+  <text x="72" y="327" class="body">Freelancer starts the workflow</text>
+
+  <rect x="478" y="190" width="324" height="170" rx="18" class="box"/>
+  <text x="502" y="230" class="heading">FastAPI application</text>
+  <text x="502" y="267" class="body">Receives the brief</text>
+  <text x="502" y="297" class="body">Coordinates the workflow</text>
+  <text x="502" y="327" class="body">Returns reviewable output</text>
+
+  <rect x="908" y="190" width="324" height="170" rx="18" class="box"/>
+  <rect x="908" y="190" width="8" height="170" rx="4" fill="#725acb"/>
+  <text x="932" y="230" class="heading">Strands agent</text>
+  <text x="932" y="267" class="body">Interprets requested work</text>
+  <text x="932" y="297" class="body">Uses constrained catalog tools</text>
+  <text x="932" y="327" class="body">Selects source and capability IDs</text>
+
+  <path d="M372 267H467" class="wire"/>
+  <text x="390" y="249" class="label">brief</text>
+  <path d="M802 267H897" class="wire"/>
+  <text x="819" y="249" class="label">run</text>
+
+  <rect x="908" y="471" width="324" height="170" rx="18" class="box"/>
+  <text x="932" y="511" class="heading">Ollama model</text>
+  <text x="932" y="548" class="body">Local language inference</text>
+  <text x="932" y="578" class="body">Configurable model</text>
+  <text x="932" y="608" class="body">Model weights kept separate</text>
+
+  <rect x="478" y="471" width="324" height="170" rx="18" class="box"/>
+  <rect x="478" y="471" width="8" height="170" rx="4" fill="#15907d"/>
+  <text x="502" y="511" class="heading">Catalog &amp; checks</text>
+  <text x="502" y="548" class="body">Known service limits</text>
+  <text x="502" y="578" class="body">Prices only resolved scope</text>
+  <text x="502" y="608" class="body">Exact source / English checks</text>
+
+  <rect x="48" y="471" width="324" height="170" rx="18" class="box"/>
+  <rect x="48" y="471" width="8" height="170" rx="4" fill="#15907d"/>
+  <text x="72" y="511" class="heading">Review pack</text>
+  <text x="72" y="548" class="body">Scope and price breakdown</text>
+  <text x="72" y="578" class="body">Exclusions and open questions</text>
+  <text x="72" y="608" class="body">Human reviews before sharing</text>
+
+  <path d="M1070 368V460" class="wire" marker-start="url(#arrow)"/>
+  <text x="1090" y="412" class="label">inference</text>
+  <path d="M952 366C948 426 697 409 681 460" class="wire"/>
+  <text x="718" y="397" class="label">tool calls &amp; validation</text>
+  <path d="M478 556H383" class="wire"/>
+  <text x="390" y="538" class="label">export</text>
+  <path d="M210 471V371" class="wire"/>
+  <text x="229" y="416" class="label">inspect &amp; download</text>
+
+  <text x="48" y="728" class="body">Strands SDK orchestration · Local inference · No client messaging, payments or AWS deployment</text>
+</svg>

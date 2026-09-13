@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f3ed">
+    <meta name="description" content="Turn a messy client request into a reviewable scope, questions, and a draft reply.">
+    <title>ScopeProof — A clearer starting point.</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#brief">Skip to your brief</a>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="/" aria-label="ScopeProof home">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M8 4H4v24h24v-4M13 4h15v15M11 15l5 5L28 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" stroke-linejoin="miter"/></svg></span>
+          <span>Scope<span class="brand-light">Proof</span><span class="brand-period">.</span></span>
+        </a>
+        <span class="header-caption">SCOPE BEFORE YOU SAY YES.</span>
+        <details class="model-status" id="model-status">
+          <summary><span class="status-dot" id="health-dot" aria-hidden="true"></span><span id="health-label">Checking model</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg></summary>
+          <div class="model-popover"><p class="eyebrow">MODEL CONNECTION</p><p id="health-detail">Checking the connected backend.</p><dl id="model-metadata"></dl><button class="text-button" id="refresh-health" type="button">Check again <span aria-hidden="true">↗</span></button></div>
+        </details>
+      </header>
+
+      <main>
+        <section class="intro" aria-labelledby="page-heading">
+          <div class="intro-copy">
+            <p class="eyebrow"><span class="tiny-cross" aria-hidden="true">✳</span> CLEAR BOUNDARIES. BETTER WORK.</p>
+            <h1 id="page-heading">Turn messy requests into<br class="desktop-break"> work you can <span class="serif-word">deliver.</span></h1>
+            <p class="intro-description">A grounded scope, the right questions, and a reply you can stand behind. Start with the client’s words.</p>
+          </div>
+          <div class="intro-note" aria-label="How it works">
+            <span class="note-top">THE BRIEF IS JUST<br>THE BEGINNING.</span>
+            <div class="note-route"><span>Read</span><span aria-hidden="true">↘</span><span>Check</span><span aria-hidden="true">↘</span><span class="route-final">Review</span></div>
+            <p>Source quotes. Exact math.<br>Always a human decision.</p>
+          </div>
+        </section>
+
+        <section class="workspace" aria-labelledby="workspace-heading">
+          <div class="workspace-heading">
+            <div class="workspace-title"><span class="section-index">01 /</span><h2 id="workspace-heading">Your workspace</h2></div>
+            <span class="workspace-hint">A little clarity goes a long way.</span>
+          </div>
+
+          <div class="workspace-grid">
+            <div class="input-column">
+              <form id="scope-form" class="brief-card">
+                <div class="card-heading"><h3><span class="mini-index">A</span> The request</h3><button class="text-button quiet" id="clear-brief" type="button">Clear</button></div>
+                <label class="brief-label" for="brief">What does your client need?</label>
+                <p class="field-help" id="brief-help">Paste their message as it is. Include deliverables, timing, and anything that feels unclear.</p>
+                <div class="textarea-wrap"><textarea id="brief" name="brief" rows="10" minlength="20" maxlength="12000" required aria-describedby="brief-help brief-count" placeholder="“Hi! I need a few things fixed on my website. Should be pretty quick…”"></textarea><div class="textarea-footer"><span><span aria-hidden="true">↳</span> Their words are your evidence.</span><span id="brief-count">0 / 12,000</span></div></div>
+                <details class="change-details" id="change-details">
+                  <summary><span><span class="plus-icon" aria-hidden="true">+</span> Add a change request</span><span class="optional-label">OPTIONAL</span></summary>
+                  <div class="change-body"><label for="change-request">What changed since the original request?</label><textarea id="change-request" name="change-request" rows="3" maxlength="4000" placeholder="“Could you also add a booking system?”"></textarea><p class="field-help">Run again to compare drafts in this session. Keep both fields together within 12,000 characters.</p></div>
+                </details>
+                <div class="form-error" id="form-error" role="alert" hidden></div>
+                <button class="run-button" id="run-button" type="submit"><span id="run-button-text">Find the scope</span><span class="button-arrow" id="run-button-icon" aria-hidden="true">↗</span></button>
+                <p class="run-disclaimer">A reviewable draft. You make the final call.</p>
+              </form>
+
+              <details class="catalog-panel" id="catalog-panel">
+                <summary><span><svg class="small-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 3h5v5H3zm9 0h5v5h-5zM3 12h5v5H3zm9 0h5v5h-5z"/></svg> The sample service catalog</span><span class="catalog-count" id="catalog-count">—</span><span class="chevron" aria-hidden="true">⌄</span></summary>
+                <div class="catalog-body"><p class="field-help">These synthetic services demonstrate scope checking. Prices are illustrative, not live offers or an accepted agreement.</p><div id="catalog-list"><p class="loading-note">Loading services…</p></div></div>
+              </details>
+              <p class="privacy-note"><svg class="small-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 9V6a5 5 0 0 1 10 0v3M3 9h14v9H3zm7 4v2"/></svg><span>Briefs are processed by your local Ollama model. This app does not send messages or accept work.</span></p>
+            </div>
+
+            <div class="output-column" id="output-column">
+              <section class="empty-state" id="empty-state" aria-labelledby="empty-heading">
+                <div class="empty-heading"><span class="eyebrow">YOUR NEXT CLEAR STEP</span><span class="outline-arrow" aria-hidden="true">↗</span></div>
+                <h3 id="empty-heading">Every “quick fix”<br>deserves a second look.</h3>
+                <p class="empty-description">Bring a brief, or take a sample for a spin. We’ll separate what’s included from what still needs a conversation.</p>
+                <div class="sample-heading"><h4>Start with a sample</h4><span>SYNTHETIC DEMOS</span></div>
+                <div class="sample-list" id="sample-list"><p class="loading-note">Loading sample briefs…</p></div>
+                <div class="expectation-row"><span><i aria-hidden="true">01</i> A defined scope</span><span><i aria-hidden="true">02</i> Useful questions</span><span><i aria-hidden="true">03</i> A draft reply</span></div>
+              </section>
+
+              <section class="run-panel" id="run-panel" aria-labelledby="run-heading" hidden>
+                <div class="run-panel-heading"><div><span class="eyebrow">THE WORK BEHIND THE WORDS</span><h3 id="run-heading">Making the brief clearer.</h3></div><span id="run-state-badge" class="run-state-badge">Queued</span></div>
+                <p class="run-stage" id="run-stage" role="status" aria-live="polite">Waiting for the backend.</p>
+                <ol id="run-events" class="run-events"></ol>
+                <div id="run-error" class="run-error" role="alert" hidden></div>
+                <p class="run-panel-footnote" id="run-panel-footnote">These steps come from the live run. Your draft appears when the checks finish.</p>
+              </section>
+
+              <article class="result-card" id="result-card" aria-labelledby="result-heading" hidden>
+                <div class="result-topline"><span class="eyebrow"><span class="result-dot" aria-hidden="true"></span> READY FOR YOUR REVIEW</span><span class="draft-stamp">DRAFT / NOT AN AGREEMENT</span></div>
+                <h3 id="result-heading"></h3>
+                <p class="result-summary" id="result-summary"></p>
+                <div class="quote-card"><div><span class="eyebrow">SAMPLE CATALOG MATCH</span><p id="service-name"></p></div><div class="price-block"><span class="eyebrow">ILLUSTRATIVE ESTIMATE</span><p id="quote-total"></p></div><p class="quote-notes" id="quote-notes"></p></div>
+                <div id="comparison" class="comparison" hidden></div>
+                <section class="result-section" aria-labelledby="scope-heading"><div class="result-section-heading"><h4 id="scope-heading">The scope, in plain sight.</h4><span class="section-count" id="scope-count"></span></div><ul class="scope-list" id="scope-list"></ul></section>
+                <section class="result-section" id="questions-section" aria-labelledby="questions-heading"><div class="result-section-heading"><h4 id="questions-heading">Before you say yes.</h4><span class="section-count" id="question-count"></span></div><div id="questions-list" class="question-list"></div></section>
+                <section class="result-section" id="risks-section" aria-labelledby="risks-heading"><div class="result-section-heading"><h4 id="risks-heading">Keep an eye on these.</h4><span class="section-count" id="risk-count"></span></div><div id="risks-list" class="risks-list"></div></section>
+                <section class="result-section" id="deliverables-section" aria-labelledby="deliverables-heading"><div class="result-section-heading"><h4 id="deliverables-heading">What you’ll hand over.</h4></div><ul class="deliverables-list" id="deliverables-list"></ul></section>
+                <section class="reply-section" aria-labelledby="reply-heading"><div class="result-section-heading"><h4 id="reply-heading">Keep the conversation moving.</h4><button id="copy-reply" class="text-button" type="button"><span id="copy-reply-label">Copy reply</span> <span aria-hidden="true">↗</span></button></div><p class="reply-label">YOUR CLIENT REPLY · REVIEW BEFORE SENDING</p><div class="client-message" id="client-message"></div></section>
+                <details class="audit-details" id="audit-details">
+                  <summary><span><span class="plus-icon" aria-hidden="true">+</span> Run details</span><span class="audit-summary-label">MODEL &amp; TOOL TRACE</span></summary>
+                  <div class="audit-body"><dl class="audit-metadata" id="audit-metadata"></dl><ol class="audit-trace" id="audit-trace" aria-label="Actual tool calls"></ol><p class="audit-note" id="audit-note">Reported by the completed backend run. Source inputs are omitted from this view.</p></div>
+                </details>
+                <div class="result-footer"><p id="result-metrics">Check every boundary and source quote before sharing.</p><a class="export-button" id="export-pack" href="#" aria-disabled="true" tabindex="-1"><svg class="small-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v11m-4-4 4 4 4-4M3 14v4h14v-4"/></svg> Export review pack</a></div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer"><span class="footer-brand">ScopeProof.</span><p>Make room for good work.</p><span>BRIEF → BOUNDARIES → BETTER CONVERSATIONS</span></footer>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  </body>
+</html>

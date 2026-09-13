@@ -1,0 +1,48 @@
+{
+  "status": "Verified captions for actual local browser captures, 13 September 2026.",
+  "note": "Captioned screenshot montage; not a real-time screen recording. Processing gaps are omitted. Synthetic data only. No audio track.",
+  "scenes": [
+    {
+      "file": "00-overview.png",
+      "title": "ScopeProof: clearer scope before you commit",
+      "caption": "For freelance developers who turn client messages into fixed-scope work. This captioned montage shows actual local runs, with processing gaps omitted.",
+      "seconds": 12
+    },
+    {
+      "file": "01-brief.png",
+      "title": "Start with the client’s exact words",
+      "caption": "This synthetic brief asks for one responsive landing page, four sections, and supplied copy and images. The four service offers and all prices are illustrative.",
+      "seconds": 16
+    },
+    {
+      "file": "04-quote.png",
+      "title": "A checked sample estimate: USD 120",
+      "caption": "The real Strands and Qwen3 run took 33.02 seconds on this CPU. Two tool calls read the catalog and validated the scope. Code applies the catalog price.",
+      "seconds": 20
+    },
+    {
+      "file": "03-grounded-scope.png",
+      "title": "Inspect the evidence behind the included work",
+      "caption": "Each source sentence is preserved exactly. Capability IDs and quantities are checked by code. Exact text is evidence of what was requested, not proof of feasibility.",
+      "seconds": 20
+    },
+    {
+      "file": "05-change-request.png",
+      "title": "Login and checkout change the scope",
+      "caption": "The second real run took 30.30 seconds. The estimate becomes Unpriced; login and subscription payments are excluded from the static-page package.",
+      "seconds": 24
+    },
+    {
+      "file": "06-review-pack.png",
+      "title": "Finish with a reviewable artifact",
+      "caption": "Copy the draft reply or export a ZIP with scope, questions, risks, source evidence and a checklist. The pack was downloaded and checked. No client message is sent.",
+      "seconds": 22
+    },
+    {
+      "file": "07-run-details.png",
+      "title": "Inspect the real model and tool trace",
+      "caption": "A separate CSV sample also completed: 31.28 seconds, two model calls and two tools. This local prototype uses Strands, Ollama and FastAPI. Human review remains essential.",
+      "seconds": 22
+    }
+  ]
+}
