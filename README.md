@@ -2,6 +2,8 @@
 
 **Turn a messy client brief into a scope you can explain.**
 
+[Download the demo and sample review pack](https://github.com/terralabz-customer/scopeproof/releases/tag/v0.1.0) · [Submission draft](docs/DEVPOST_DRAFT.md)
+
 ScopeProof is a local agent for freelance developers who sell fixed-scope services. It turns a brief and a small synthetic service catalog into a review pack: proposed work, exact source statements, exclusions, open questions and a catalog-based sample estimate when the scope is clear.
 
 This project began on **13 September 2026** for the **Professional Agents** track of Agents for Humans. The source, interface and synthetic examples are new work created with AI coding assistance. The local prototype has been installed, tested and exercised with real Strands/Ollama runs; the observed results and remaining publication steps are recorded below.
@@ -76,7 +78,7 @@ Observed on **13 September 2026**, on Windows 11 AMD64 with Python **3.12.10**, 
 - **CSV cleanup brief:** USD **60** sample estimate; **31.28 seconds**, two model calls and two tool calls. The agent scoped the cleanup; it did not process a CSV.
 - **Browser/export checks passed:** copying the draft reply succeeded. The actual download returned all four ZIP files, and the inspected price and evidence matched the reviewed result. At a 375-pixel viewport the document width was 360 pixels; no browser errors or warnings were observed in that check.
 - **Public source:** [terralabz-customer/scopeproof](https://github.com/terralabz-customer/scopeproof), with a detected MIT license.
-- **Demo artifact:** a checked 136-second MP4, assembled from actual browser captures and clearly labeled as a captioned montage with processing gaps omitted. It has no audio track. The required YouTube/Vimeo upload and final Devpost submission receipt remain pending account sign-in.
+- **Demo artifact:** a checked [136-second MP4](https://github.com/terralabz-customer/scopeproof/releases/download/v0.1.0/ScopeProof-demo.mp4), assembled from actual browser captures and clearly labeled as a captioned montage with processing gaps omitted. It has no audio track. The required YouTube/Vimeo upload and final Devpost submission receipt remain pending account sign-in.
 
 No time-saving percentages, customer adoption, paid work or external user validation have been measured. Sample briefs and catalog services are synthetic, including any names, requested work or prices. They are examples, not current marketplace offers or customer commitments.
 

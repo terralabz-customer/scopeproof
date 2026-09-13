@@ -8,6 +8,8 @@
 - **Tagline:** Turn a client brief into a scope you can explain.
 - **Track:** Professional Agents
 - **Public source repository:** https://github.com/terralabz-customer/scopeproof
+- **Prepared release:** [v0.1.0](https://github.com/terralabz-customer/scopeproof/releases/tag/v0.1.0), source revision `9668d8f784380cb63be125010f4dc532ffa122c6`.
+- **Prepared MP4 download:** https://github.com/terralabz-customer/scopeproof/releases/download/v0.1.0/ScopeProof-demo.mp4 — upload this to public YouTube/Vimeo; the GitHub asset is not a substitute for the required video host.
 - **Public YouTube or Vimeo video:** PENDING — planned captioned montage of screenshots from actual runs, labeled as edited screenshots rather than real-time screen recording.
 - **AWS Builder ID:** PENDING — use the entrant's actual ID in the form, not this public file.
 - **Entrant and authorized representative:** PENDING — confirm individual or organization entry.
@@ -63,7 +65,7 @@ The [resources page](https://agentsforhumans.devpost.com/resources) says the pro
 - [x] Complete a clean installation and actual Strands/model run.
 - [x] Record the model, test results and limitations.
 - [x] Check browser copy, the actual export and narrow-screen layout.
-- [ ] Record the final published source revision.
+- [x] Record the published source revision for the prepared release.
 - [x] Review source and assets for rights, license notices and private information.
 - [x] Publish the authorized public repository with visible MIT license.
 - [x] Build and review the 136-second captioned actual-run screenshot montage and pitch.
